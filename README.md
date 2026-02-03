@@ -223,7 +223,7 @@ Website: []
 
 Grievance Officer:
 Name: SANDEEPRAJ DUGAR
-Email: Srd202330@gmail.com
+Email: srd202330@gmail.com
 Response Time: Within 7 working days
 
 
@@ -232,8 +232,8 @@ Response Time: Within 7 working days
         <h3>Contact Us</h3>
         <p><strong>Company:</strong> Viv Tech</p>
         <p><strong>App Name:</strong> StockHai</p>
-        <p><strong>Email:</strong>srd202330@gmail.com</p>
-        <p><strong>Address:</strong> [Your Address]</p>
+        <p><strong>Email:</strong> srd202330@gmail.com</p>
+        <p><strong>Address:</strong> E-404, SHUBH VATIKA, DINDOLI, SURAT, GUJARAT, INDIA- 394210</p>
     </div>
 </body>
 </html>
