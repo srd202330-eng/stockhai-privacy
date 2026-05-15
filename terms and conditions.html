@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes">
+    <title>Terms and Conditions | StockHai</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f5f7fb;
+            font-family: 'Inter', 'Segoe UI', Roboto, system-ui, sans-serif;
+            line-height: 1.6;
+            color: #1e293b;
+            padding: 2rem 1rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .terms-container {
+            max-width: 850px;
+            width: 100%;
+            background: #ffffff;
+            border-radius: 2rem;
+            box-shadow: 0 20px 35px rgba(0, 0, 0, 0.05), 0 10px 15px rgba(0, 0, 0, 0.03);
+            padding: 2.5rem 2.2rem;
+            margin: 1rem 0;
+        }
+
+        @media (max-width: 500px) {
+            body {
+                padding: 0.8rem;
+            }
+            .terms-container {
+                padding: 1.8rem 1.2rem;
+                border-radius: 1.5rem;
+            }
+        }
+
+        .app-title {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .app-icon {
+            background: #0f2b4b;
+            color: white;
+            font-weight: 700;
+            font-size: 1.6rem;
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 14px rgba(15, 43, 75, 0.2);
+        }
+
+        .app-name {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            color: #0f2b4b;
+        }
+
+        .last-updated {
+            display: inline-block;
+            background: #eef2ff;
+            color: #1e3a8a;
+            font-weight: 500;
+            font-size: 0.9rem;
+            padding: 0.3rem 1rem;
+            border-radius: 30px;
+            margin: 0.7rem 0 1.8rem 0;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+            color: #0f172a;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 2rem 0 0.8rem 0;
+            padding-bottom: 0.4rem;
+            border-bottom: 2px solid #e9eef4;
+            color: #0f2b4b;
+        }
+
+        h3 {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin: 1.3rem 0 0.5rem 0;
+            color: #1e293b;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            color: #334155;
+        }
+
+        ul {
+            margin: 0.7rem 0 1.2rem 1.4rem;
+            list-style-type: none;
+        }
+
+        li {
+            margin-bottom: 0.6rem;
+            font-size: 1rem;
+            color: #334155;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #2563eb;
+            font-weight: bold;
+            font-size: 1.3rem;
+            line-height: 1.3;
+        }
+
+        .feature-grid {
+            background: #f8fafd;
+            border-radius: 1.2rem;
+            padding: 1.2rem 1.5rem;
+            margin: 0.8rem 0 1.2rem 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 0.8rem;
+        }
+
+        .feature-item {
+            font-weight: 500;
+            color: #0f2b4b;
+            display: flex;
+            align-items: baseline;
+            gap: 0.4rem;
+        }
+
+        .highlight {
+            background: #fff7ed;
+            border-left: 4px solid #f97316;
+            padding: 1rem 1.3rem;
+            border-radius: 0.8rem;
+            margin: 1.3rem 0 1.2rem;
+            font-weight: 500;
+            color: #7c2d12;
+        }
+
+        .contact-card {
+            background: #f1f5f9;
+            border-radius: 1.2rem;
+            padding: 1.5rem 1.5rem;
+            margin-top: 1.8rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+
+        .developer-info p {
+            margin-bottom: 0.25rem;
+            font-weight: 500;
+        }
+
+        .email-link {
+            background: white;
+            padding: 0.5rem 1.2rem;
+            border-radius: 2.5rem;
+            color: #1e3a8a;
+            font-weight: 600;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+            transition: background 0.2s;
+        }
+
+        .email-link:hover {
+            background: #e2e8f0;
+        }
+
+        .divider {
+            margin: 2rem 0 0.5rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .footer-note {
+            font-size: 0.9rem;
+            color: #64748b;
+            margin-top: 1rem;
+            text-align: center;
+        }
+
+        strong {
+            color: #0f172a;
+        }
+
+        .data-badge {
+            background: #fee2e2;
+            color: #991b1b;
+            font-weight: 600;
+            font-size: 0.85rem;
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+            margin-left: 0.3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="terms-container">
+        <div class="app-title">
+            <div class="app-icon">S</div>
+            <div class="app-name">StockHai</div>
+        </div>
+        <h1>Terms and Conditions</h1>
+        <div class="last-updated">📅 Last Updated: May 15, 2026</div>
+
+        <p>Welcome to <strong>StockHai</strong> — smart inventory management with order‑specific chat. By downloading or using the app, you agree to these Terms. If you do not agree, please discontinue use immediately.</p>
+
+        <!-- Section 2: Service Description -->
+        <h2>1. Our Services</h2>
+        <p>StockHai combines inventory control and real‑time communication. Core features include:</p>
+        <div class="feature-grid">
+            <div class="feature-item">📦 Real‑time inventory tracking</div>
+            <div class="feature-item">⚠️ Low‑stock alerts</div>
+            <div class="feature-item">💬 Order‑dedicated chat</div>
+            <div class="feature-item">📋 Order creation & tracking</div>
+            <div class="feature-item">📊 Sales & purchase reports</div>
+            <div class="feature-item">🔍 Instant order search</div>
+        </div>
+        <p>The app is designed for small shops, wholesalers, manufacturers, distributors, and inventory managers.</p>
+
+        <!-- Section 3: User Responsibilities -->
+        <h2>2. User Responsibilities</h2>
+        <ul>
+            <li><strong>Accurate information:</strong> Provide truthful registration details and keep them updated.</li>
+            <li><strong>Account security:</strong> You are responsible for all activity under your credentials. Keep your login safe.</li>
+            <li><strong>Lawful use:</strong> Do not upload illegal, abusive, or infringing content, especially inside order chats.</li>
+            <li><strong>No disruption:</strong> Do not interfere with servers, networks, or the app’s normal operation.</li>
+            <li><strong>Compliance:</strong> Follow all applicable local, national, and international laws.</li>
+        </ul>
+
+        <!-- Section 4: Intellectual Property -->
+        <h2>3. Intellectual Property</h2>
+        <p>The StockHai name, logo, design, code, and interface are owned by <strong>SANDEEPRAJ RAJENDRASINGH DUGAR</strong> (the developer). You receive a limited, non‑transferable license for personal/business use only. You may not copy, modify, reverse‑engineer, or create derivative works without written permission.</p>
+
+        <!-- Section 5: Data Security & Privacy (critical based on Play Store) -->
+        <h2>4. Data Security & Privacy</h2>
+        <p>Your business data matters. According to Google Play disclosures, please understand the following:</p>
+        <ul>
+            <li><strong>Data sharing:</strong> The app <strong>may share personal information and calendar data</strong> with third parties solely to provide core functionality.</li>
+            <li><strong>Data collection:</strong> The developer declares that this app <strong>does not collect any data</strong> beyond what is functionally necessary. Check the in‑app privacy policy for full details.</li>
+            <li><strong>Encryption:</strong> Data transmission is <strong>not encrypted</strong> <span class="data-badge">⚠️ Unencrypted</span>. You accept the associated risks.</li>
+            <li><strong>Data deletion:</strong> You can request deletion of your data at any time by contacting us (see Section 9).</li>
+        </ul>
+        <div class="highlight">
+            ⚠️ <strong>Important:</strong> While we implement safeguards, no internet transmission is 100% secure. By using StockHai you acknowledge that data (including chat messages) is not encrypted in transit.
+        </div>
+
+        <!-- Section 6: Disclaimer -->
+        <h2>5. Disclaimer of Warranties</h2>
+        <p>The app is provided <strong>"AS IS"</strong> without warranties of any kind. We do not guarantee that StockHai will be error‑free, uninterrupted, or completely secure. We are not liable for any business losses, profit loss, or data loss arising from your use of the app.</p>
+
+        <!-- Section 7: Termination -->
+        <h2>6. Termination</h2>
+        <p>We may suspend or terminate your access without prior notice if you violate these Terms. You may stop using the app at any time and request data deletion via the contact information below.</p>
+
+        <!-- Section 8: Changes -->
+        <h2>7. Changes to These Terms</h2>
+        <p>We may update these Terms periodically. The latest version will always be posted within the app or on our official listing. Continued use after changes means you accept the revised Terms.</p>
+
+        <!-- Section 9: Governing Law -->
+        <h2>8. Governing Law</h2>
+        <p>These Terms are governed by the laws of <strong>India</strong>, without regard to conflict of law principles. Any disputes shall be subject to the jurisdiction of courts located in India.</p>
+
+        <!-- Section 10: Contact -->
+        <h2>9. Contact Us</h2>
+        <div class="contact-card">
+            <div class="developer-info">
+                <p><strong>SANDEEPRAJ RAJENDRASINGH DUGAR</strong></p>
+                <p>📍 India</p>
+                <p>📧 <a href="mailto:srd202330@gmail.com" class="email-link">srd202330@gmail.com</a></p>
+            </div>
+            <div style="font-size:0.9rem; color:#475569;">
+                For data deletion or legal inquiries, reach out directly.
+            </div>
+        </div>
+
+        <div class="divider"></div>
+        <div class="footer-note">
+            © 2026 StockHai. All rights reserved. <br>Smart inventory, simplified communication.
+        </div>
+    </div>
+</body>
+</html>
